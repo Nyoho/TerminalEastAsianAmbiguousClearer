@@ -9,7 +9,7 @@
 #import "TEAACController.h"
 #import <objc/objc-class.h>
 
-@implementation TTLogicalScreen (TerminalEastAsianAmbiguousClearer)
+@implementation NSObject (TerminalEastAsianAmbiguousClearer)
 
 - (BOOL)isDoubleWidthCharacter:(int)unicode
 {
