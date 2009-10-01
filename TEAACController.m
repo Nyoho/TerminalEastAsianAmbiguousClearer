@@ -14,7 +14,8 @@
 - (BOOL)isDoubleWidthCharacter:(int)unicode
 {
 	//http://unicode.org/charts/PDF/UFF00.pdf
-	if (unicode <= 0xff || (unicode >= 0xff61 && unicode <= 0xffdf) )
+	//http://unicode.org/charts/PDF/U0080.pdf
+	if ((unicode <= 0xff  && unicode != 0x00d7) || (unicode >= 0xff61 && unicode <= 0xffdf))
 		return NO;
 
 	return YES;
